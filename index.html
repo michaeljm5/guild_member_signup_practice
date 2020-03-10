@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Guild Member Form</title>
+        <link href="https://fonts.googleapis.com/css?family=MedievalSharp&display=swap&subset=latin-ext" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">   
+    </head>
+    <body>
+        <label>Guild Member Sign-Up</label>
+
+        <form action="index.html" method="GET"><br>
+            <label for="name">Name</label><br><input type="name" id="name" name="user_name"><br>
+            <label for="class">Class</label><br><input type="name" id="class" name="user_class"><br>
+            <label for="race">Race</label><br><input type="name" id="race" name="user_race">
+
+            <fieldset>
+                <legend>Preferences</legend>
+                <label>Times Active</label><br>
+                    <label for="day">Day</label><input type="radio" id="day" value="day" name="times_awake"> 
+                    <label for="night">Night</label><input type="radio" id="night" value="night" name="times_awake"> 
+                    <label for="anytime">Anytime/I do not sleep</label><input type="radio" id="anytime" value="anytime" name="times_awake">
+                    
+
+                    <br><label>Preffered Method/s of Payment</label><br>
+                    <label for="gold">Gold</label><input type="checkbox" id="gold" value="gold" name="user_payment">
+                    <label for="mead">Mead</label><input type="checkbox" id="mead" value="mead" name="user_payment">
+                    <label for="runes">Runes</label><input type="checkbox" id="runes" value="runes" name="user_payment">
+                    <label for="blood">Blood of enemies</label><input type="checkbox" id="blood" value="blood" name="user_payment">
+                
+            </fieldset>
+    
+            <fieldset>
+                <legend>Origin and Backstory</legend>
+                    <label>Home</label>
+
+                    <select id="home" name="user_home">
+                        <option value="Hyrule">Hyrule</option>
+                        <option value="middleearth">Middle-Earth</option>
+                        <option value="narnia">Narnia</option>
+                        <option value="westeros">Westoros</option>
+                        <option value="dinotopia">Dinotopia</option>
+                        <option value="outworld">Outworld</option>
+                        <option value="runeterra">Runeterra</option>
+                    </select><br>
+
+                    <textarea id="backstory" name="user_backstory"></textarea>
+
+            </fieldset>
+            
+        </form><br>
+
+        <button type="submit">Submit</button>
+    </body>
+</html>
